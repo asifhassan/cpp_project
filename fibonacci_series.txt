@@ -1,0 +1,29 @@
+////Fibonacci series
+
+
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+
+
+int i,a=1,b=0,c,n;
+
+int main()
+{
+	cout << "how many number you want print in Fibonacci:";
+		cin >> n;
+
+		cout <<b <<" ";
+		cout << a << " ";
+	for (i = 0;i < n-2;i++)
+	{
+		c = a + b;
+		b = a;
+		a = c;
+		cout << c <<" ";
+	}
+	return 0;
+}
