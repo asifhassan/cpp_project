@@ -1,0 +1,33 @@
+
+/////////////addition of two integer number
+
+#include "stdafx.h"
+
+
+#include <iostream>
+using namespace std;
+
+
+int addition(int c);
+
+int a, b, c;
+int main()
+
+{
+
+	cout << "enter a number:";
+	cin >> a;
+	cout << "enter another number:";
+	cin >> b;
+
+	cout << "the addition is:"<<addition(c)<<"\n";
+
+
+}
+
+int addition(int c)
+{
+	c = a + b;
+
+	return c;
+}
