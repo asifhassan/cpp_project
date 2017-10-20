@@ -1,0 +1,18 @@
+// pointer_practice.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int i=10,x, y;
+	//&x = i;
+	cout << "The value of i is:" << i <<"\n";
+	cout << "The memory address of i is:" << &i <<"\n";
+	cout << "The value of i is using pointer: " << *(&i)<<"\n";
+	//cout << "The value of i is using pointer: " << x << "\n";
+    return 0;
+}
+
