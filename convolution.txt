@@ -1,0 +1,46 @@
+//file with extension cpp is ok to run  code in visual studio
+
+
+// convolution.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+#include<stdio.h>
+#include<conio.h>
+
+
+int main(void)
+
+{
+	int x[4] = { 1,2,3,4 }, h[6] = { 1,1,0 }, p, b[6] = { 0 };
+	for (int j = 0;j <= 3;j++)
+	{
+		p = j;
+		
+
+		int n[6] = {0};
+		for (int k = 0;k <= 5;k++)
+		{
+
+			n[k+p] = h[k];
+			printf("%d", n[k]);
+		}
+
+		/*for (int m = 0;m <= 5;m++)
+		{
+
+			b[m] = b[m] + n[m];
+
+		}*/
+	}
+	/*for (int m = 0;m <= 5;m++)
+	{
+
+		printf("%d",n[m]);
+
+	}*/
+
+	return 0;
+}
