@@ -1,0 +1,30 @@
+// palindrome_number.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int r = 0,num,digit,n;
+
+	cout << "Give a number for palindrome:";
+	cin >> num;
+	n = num;
+	do {
+		digit = num % 10;
+		r = (r * 10) + digit;
+		num = num / 10;
+
+	} while (num != 0);
+
+		if (r == n)
+		
+			cout << "The number is palindrome"<<"\n";
+		else
+			cout << "The number is not a palindrome" << "\n";
+		
+	return 0;
+}
+
